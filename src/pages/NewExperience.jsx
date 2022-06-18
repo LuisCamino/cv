@@ -1,52 +1,51 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
+import React, { useState } from 'react'
+import  {useDispatch} from 'react-redux';
 import { addExperience } from '../redux/experience/experience.actions';
-import { useDispatch } from 'react-redux';
+import { useNavigate } from "react-router-dom";
+
+
+const INITIAL_FORM = {
+    name: '',
+    date: '',
+    where:''
+}
 
 
 const NewExperience = () => {
-    const {register, handleSubmit, formState:{errors}} = useForm();  //register --> coge los cambios de nuestros campos, handleSubmit --> maneja el submit del formulario
+    const [form, setForm] = useState(INITIAL_FORM);
     const dispatch = useDispatch();
+    const navigate = useNavigate()
 
-    const onSubmit = (formData) => {                //en el onsubmit nos llegan los datos directamente del handleSubmit de react-hook-form
-        console.log(formData);
-        dispatch(addExperience(formData));
+    const handleSubmit = (ev) => {
+        ev.preventDefault();
+        dispatch(addExperience(form))
+        navigate('/')
     }
 
+    const handleChange = (ev) => {
+        const  {name, value} = ev.target
+        setForm({...form, [name]:value})
+
+
+    }
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit}>
         <label>
-            <span>name</span>
-            <input type="text" name="name" {...register('name',{        //register setea el nombre del campo y sus errores y mensajes de error 
-                required: "Please, enter a name",
-                pattern: {
-                    value: /^[a-zA-Z]{4,10}$/,
-                    message: "Please enter a valid name",
-                }
-            })}/>
-            {/* Si existen mostramos los mensajes de error. */}
-            {errors.name && errors.name.type === 'required' && <span>{errors.name.message}</span>}          
-            {errors.name && errors.name.type === 'pattern' && <span>{errors.name.message}</span>}
+            <span>exp name</span>
+            <input type="text" name="name" onChange={handleChange}/>
         </label>
         <label>
             <span>date</span>
-            <input type="text" name="date" {...register('date', {pattern: {
-                value: /^(19[0-9]\d|20[0-2]\d)$/,
-                message: "Please enter a valid date"
-                }})}/>
-            {errors.date && errors.date.type === 'pattern' && <span>{errors.date.message}</span>}
+            <input type="date" name="date" onChange={handleChange}/>
         </label>
         <label>
-            <span>where</span>
-            <input type="text" name="where" {...register('where')}/>
+            <span>place</span>
+            <input type="text" name="where" onChange={handleChange}/>
         </label>
-        <label>
-            <span>description</span>
-            <input type="text" name="description" {...register('description')}/>
-        </label>
-        <button>addExperience</button>
+      
+        <button>add exp</button>
     </form>
   )
 }
 
-export default NewExperience
+export default NewExperience;

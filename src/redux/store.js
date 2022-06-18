@@ -10,8 +10,7 @@ const rootReducer = combineReducers({
     education: educationReducer,
     experience: experienceReducer,
     languages: languagesReducer,
-    habilities: habilitiesReducer,
-    
+    habilities: habilitiesReducer,  
 }); 
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));

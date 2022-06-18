@@ -16,6 +16,10 @@ const INITIAL_STATE = {
         case actions.DELETE_EXPERIENCE:
             const experienceFiltered = experience.filter(exp => exp !== action.payload);
             return {...state, experience: [...experienceFiltered]};
+        case actions.EDIT_EXPERIENCE:
+            const {id, editExperience} = action.payload;
+            experience[id] = editExperience;
+            return state;
         default:
             return state;
     }

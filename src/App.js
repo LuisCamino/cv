@@ -8,6 +8,7 @@ import NewHabilities from "./pages/newHabilities";
 import EditHabilities from "./pages/EditHabilities"
 import EditLanguages from "./pages/EditLanguages";
 import NewExperience from "./pages/NewExperience";
+import EditExperience from "./pages/EditExperience";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/newEducation" element={<NewEducation />} />
           <Route path="/editEducation/:id" element={<EditEducation />} />
           <Route path="/newExperience" element={<NewExperience />} />
+          <Route path="/editExperience/:id" element={<EditExperience />} />
           <Route path="/newLanguages" element={<NewLanguages />} />
           <Route path="/editLanguages/:id" element={<EditLanguages />} />
           <Route path="/newHabilities" element={<NewHabilities />} />

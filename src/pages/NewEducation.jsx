@@ -40,7 +40,7 @@ const NewEducation = () => {
             <span>where</span>
             <input type="text" name="where" onChange={handleChange}/>
         </label>
-        <button>addExperience</button>
+        <button>add education</button>
     </form>
   )
 }
