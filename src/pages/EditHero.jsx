@@ -58,7 +58,7 @@ const EditHero = () => {
         <br/>
         <label>
             <span>birth date</span>
-            <input type="text" name="birthDate" value={form.birthDate} onChange={handleChange}/>
+            <input type="date" name="birthDate" value={form.birthDate} onChange={handleChange}/>
         </label>
         <br/>
         <label>

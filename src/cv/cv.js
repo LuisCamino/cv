@@ -9,7 +9,7 @@ export const CV = {
       image: "https://servicios.aerotecnologia.com.ar:8443/JustFlyWeb2.3/Imagenes/log.png",
       gitHub: "https://github.com/tonystark",
 }],
-      aboutMe: [
+      about: [
         {
           info: "My armor, it was never a distraction or a hobby, it was a cocoon. I am Iron Man.",
         },

@@ -10,6 +10,9 @@ import EditLanguages from "./pages/EditLanguages";
 import NewExperience from "./pages/NewExperience";
 import EditExperience from "./pages/EditExperience";
 import EditHero from "./pages/EditHero";
+import NewAbout from "./pages/NewAbout";
+import EditAbout from "./pages/EditAbout";
+
 
 
 
@@ -20,14 +23,18 @@ function App() {
         <nav>
           <NavLink  to="/">HOME</NavLink>
           <NavLink  to="/newEducation">EDUCATION</NavLink>
+          <NavLink to="/NewAbout">ABOUT</NavLink>
           <NavLink  to="/newExperience">EXPERIENCES</NavLink>
           <NavLink to="/newLanguages">LANGUAGES</NavLink>
           <NavLink to="/newHabilities">SKILLS</NavLink>
+
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/newEducation" element={<NewEducation />} />
           <Route path="/editEducation/:id" element={<EditEducation />} />
+          <Route path="/NewAbout" element={<NewAbout />} />
+          <Route path="/editAbout/:id" element={<EditAbout />} />
           <Route path="/newExperience" element={<NewExperience />} />
           <Route path="/editExperience/:id" element={<EditExperience />} />
           <Route path="/newLanguages" element={<NewLanguages />} />

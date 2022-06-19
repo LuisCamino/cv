@@ -30,7 +30,7 @@ const EditExperience = () => {
     
   return (
     <form onSubmit={handleSubmit}>
-        <h1>EDITING "{form.name}"</h1>
+        <h1>editing "{form.name}"</h1>
         <label>
             <span>experience</span>
             <input type="text" name="name" value={form.name} onChange={handleChange}/>

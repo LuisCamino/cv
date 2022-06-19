@@ -22,10 +22,14 @@ const Hero = () => {
                 <p>{item.name}</p>
                 <p>{item.adress}</p>
                 <p>{item.city}</p>
-                <p>{item.email}</p>
+                <a href={"mailto:" + item.email}>
+                tony@starkindustries.com
+                </a>
                 <p>{item.birthDate}</p>
                 <p>{item.phone}</p>
-                <p>{item.gitHub}</p>
+                 <p><a href={hero.gitHub}>
+              GitHub
+            </a></p>
                 <div>
  
                   <Link to={`/editHero/${index}`}><button>EDIT</button></Link>

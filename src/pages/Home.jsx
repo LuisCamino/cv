@@ -3,16 +3,22 @@ import Experience from "../components/Experience";
 import Language from "../components/Languages";
 import Habilities  from "../components/Habilities";
 import Hero from "../components/Hero";
+import About from "../components/About";
 
-import { CV } from "../cv/cv";
-const { hero} = CV;
+
 
 const Home = () => {
     
   return (
     <>
-        <Hero hero={hero} />
-    
+      <div>
+        <Hero/>
+      </div>   
+      
+      <div>
+        <About/>
+      </div>
+
       <div>
       <Education/>
       </div>
@@ -28,8 +34,8 @@ const Home = () => {
       <div>
         <Habilities/>
       </div>
-      
-     
+
+
     </>
   )
 }
