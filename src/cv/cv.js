@@ -10,16 +10,16 @@ export const CV = {
       gitHub: "https://github.com/tonystark",
       aboutMe: [
         {
-          info: "🤖 My armor, it was never a distraction or a hobby, it was a cocoon. I am Iron Man.",
+          info: "My armor, it was never a distraction or a hobby, it was a cocoon. I am Iron Man.",
         },
         {
-          info: "🔩 CEO of Stark Industries.",
+          info: "CEO of Stark Industries.",
         },
         {
-          info: "🕶 Genius, billionaire, playboy, philanthropist.",
+          info: "Genius, billionaire, playboy, philanthropist.",
         },
         {
-          info: "🦾 I do have a responsibility to keep my inventions from evil hands – but I have a greater responsibility to oppose that evil any way I can.",
+          info: "I do have a responsibility to keep my inventions from evil hands – but I have a greater responsibility to oppose that evil any way I can.",
         },
       ],
     },

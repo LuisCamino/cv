@@ -3,6 +3,7 @@ import  {useDispatch} from 'react-redux';
 import { addEducation } from '../redux/education/education.actions';
 import { useNavigate } from "react-router-dom";
 
+
 const INITIAL_FORM = {
     name: '',
     date: '',
@@ -10,6 +11,7 @@ const INITIAL_FORM = {
 }
 
 const NewEducation = () => {
+    
     const [form, setForm] = useState(INITIAL_FORM);
     const dispatch = useDispatch();
     const navigate = useNavigate()
@@ -26,6 +28,7 @@ const NewEducation = () => {
         console.log(form)
 
     }
+    
   return (
     <form onSubmit={handleSubmit}>
         <label>
@@ -40,9 +43,11 @@ const NewEducation = () => {
             <span>where</span>
             <input type="text" name="where" onChange={handleChange}/>
         </label>
-        <button>add education</button>
+        <button>add</button>
     </form>
+    
   )
+  
 }
 
 export default NewEducation

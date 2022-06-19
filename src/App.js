@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { BrowserRouter as Router, Route, Routes, NavLink } from "react-router-dom";
 import Home from "./pages/Home";
 import NewEducation from "./pages/NewEducation";

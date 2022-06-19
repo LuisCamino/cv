@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { deleteLanguage } from '../redux/languages/languages.actions';
 
-import "./Languages.css";
+
 
 const Languages = () => {
 

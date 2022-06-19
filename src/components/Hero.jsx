@@ -1,5 +1,5 @@
 import React from 'react'
-import './Hero.css'
+import './Hero.scss'
 
 const Hero = ({ hero }) => {
     return (
@@ -9,16 +9,16 @@ const Hero = ({ hero }) => {
         <h2>
           {hero.name} {hero.adress}
         </h2>
-          <p>🗺️{hero.city} </p>
-          <p>🗓️{hero.birthDate}</p>
+          <p>{hero.city} </p>
+          <p>{hero.birthDate}</p>
           <p>
-            📧
+            
             <a href={"mailto:" + hero.email}>
             tony@starkindustries.com
             </a>
           </p>
-          <p>📱 {hero.phone}</p>
-          <p>💾<a href={hero.gitHub}>
+          <p> {hero.phone}</p>
+          <p><a href={hero.gitHub}>
               GitHub
             </a></p>
         </div>

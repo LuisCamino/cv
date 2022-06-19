@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Education.css";
+import "./Education.scss";
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteEducation } from '../redux/education/education.actions';
 import { Link } from 'react-router-dom';
@@ -15,7 +15,7 @@ const Education = () => {
           {education.map((item, index) => {
             return (
               <div key={index}>
-                <p className="name">📕 {item.name}</p>
+                <p className="name"> {item.name}</p>
                 <p>{item.where}</p>
                 <p>{item.date}</p>
                 <div>
