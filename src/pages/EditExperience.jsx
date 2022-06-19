@@ -30,20 +30,22 @@ const EditExperience = () => {
     
   return (
     <form onSubmit={handleSubmit}>
-
+        <h1>EDITING "{form.name}"</h1>
         <label>
-            <span>language</span>
+            <span>experience</span>
             <input type="text" name="name" value={form.name} onChange={handleChange}/>
         </label>
+        <br/>
         <label>
-            <span>sklvl</span>
+            <span>date</span>
             <input type="date" name="date" value={form.date} onChange={handleChange}/>
         </label>
+        <br/>
         <label>
-            <span>sklvl</span>
+            <span>place</span>
             <input type="text" name="where" value={form.where} onChange={handleChange}/>
         </label>
-        
+        <br/>
         <button>update experience</button>
     </form>
   )

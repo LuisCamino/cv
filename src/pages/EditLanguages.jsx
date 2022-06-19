@@ -30,19 +30,22 @@ const EditLanguages = () => {
     
   return (
     <form onSubmit={handleSubmit}>
-
+        <h1>editing "{form.language}"</h1>
         <label>
             <span>language</span>
             <input type="text" name="language" value={form.language} onChange={handleChange}/>
         </label>
+        <br/>
         <label>
             <span>written</span>
             <input type="text" name="wrlevel" value={form.wrlevel} onChange={handleChange}/>
         </label>
+        <br/>
         <label>
             <span>spoken</span>
             <input type="text" name="splevel" value={form.splevel} onChange={handleChange}/>
         </label>
+        <br/>
         <button>update language</button>
     </form>
   )

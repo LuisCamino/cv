@@ -28,19 +28,23 @@ const EditEducation = () => {
     
   return (
     <form onSubmit={handleSubmit}>
+        <h1>editing "{form.name}"</h1>
         <label>
             <span>name</span>
             <input type="text" name="name" value={form.name} onChange={handleChange}/>
         </label>
+        <br/>
         <label>
             <span>date</span>
             <input type="text" name="date" value={form.date} onChange={handleChange}/>
         </label>
+        <br/>
         <label>
             <span>where</span>
             <input type="text" name="where" value={form.where} onChange={handleChange}/>
         </label>
-        <button>update experience</button>
+        <br/>
+        <button>update education</button>
     </form>
   )
 }

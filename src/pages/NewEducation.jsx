@@ -31,19 +31,23 @@ const NewEducation = () => {
     
   return (
     <form onSubmit={handleSubmit}>
+    <h1>ADD YOUR EDUCATION</h1>
         <label>
             <span>name</span>
             <input type="text" name="name" onChange={handleChange}/>
         </label>
+        <br/>
         <label>
             <span>date</span>
             <input type="text" name="date" onChange={handleChange}/>
         </label>
+        <br/>
         <label>
             <span>where</span>
             <input type="text" name="where" onChange={handleChange}/>
         </label>
-        <button>add</button>
+        <br/>
+        <button>add education</button>
     </form>
     
   )

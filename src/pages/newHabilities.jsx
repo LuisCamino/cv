@@ -29,15 +29,17 @@ const NewHabilities = () => {
     }
   return (
     <form onSubmit={handleSubmit}>
+        <h1>ADD YOUR SKILLS</h1>
         <label>
-            <span>language</span>
+            <span>skill</span>
             <input type="text" name="skill" onChange={handleChange}/>
         </label>
+        <br/>
         <label>
-            <span>sklvl</span>
+            <span>level</span>
             <input type="text" name="sklvl" onChange={handleChange}/>
         </label>
-      
+        <br/>
         <button>add skill</button>
     </form>
   )

@@ -1,13 +1,14 @@
 export const CV = {
-    hero: {
+    hero: [{
       name: "Anthony",
       adress: "Edward Stark",
       city: "Avengers Tower / New York",
       email: "tony@starkindustries.com",
       birthDate: "29/05/1970",
       phone: "(+12) 767333841",
-      image: "https://i.imgur.com/ZQAkED3.png",
+      image: "https://servicios.aerotecnologia.com.ar:8443/JustFlyWeb2.3/Imagenes/log.png",
       gitHub: "https://github.com/tonystark",
+}],
       aboutMe: [
         {
           info: "My armor, it was never a distraction or a hobby, it was a cocoon. I am Iron Man.",
@@ -22,7 +23,7 @@ export const CV = {
           info: "I do have a responsibility to keep my inventions from evil hands – but I have a greater responsibility to oppose that evil any way I can.",
         },
       ],
-    },
+
     education: [
       {
         name: "Master in physics",

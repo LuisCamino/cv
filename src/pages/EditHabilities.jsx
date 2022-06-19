@@ -30,16 +30,17 @@ const EditHabilities = () => {
     
   return (
     <form onSubmit={handleSubmit}>
-
+        <h1>editing "{form.skill}"</h1>
         <label>
-            <span>language</span>
+            <span>skill</span>
             <input type="text" name="skill" value={form.skill} onChange={handleChange}/>
         </label>
+        <br/>
         <label>
-            <span>sklvl</span>
+            <span>level</span>
             <input type="text" name="sklvl" value={form.sklvl} onChange={handleChange}/>
         </label>
-        
+        <br/>
         <button>update skill</button>
     </form>
   )

@@ -11,7 +11,7 @@ const Education = () => {
     return (
       <div>
         <div className="education card">
-        <h2>Education</h2>
+        <h1>Education</h1>
           {education.map((item, index) => {
             return (
               <div key={index}>
@@ -19,8 +19,8 @@ const Education = () => {
                 <p>{item.where}</p>
                 <p>{item.date}</p>
                 <div>
-                  <Link to={`/editEducation/${index}`}><button>Modificar</button></Link>
-                  <button onClick={()=> {dispatch(deleteEducation(item))}}>Eliminar</button>
+                  <Link to={`/editEducation/${index}`}><button>EDIT</button></Link>
+                  <button onClick={()=> {dispatch(deleteEducation(item))}}>DELETE</button>
                 </div>
               </div>
             );

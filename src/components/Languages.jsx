@@ -13,7 +13,7 @@ const Languages = () => {
     return (
       <div>
           <div className="language card">
-          <h2>Language</h2>
+          <h1>Language</h1>
             {languages.map((item, index) => {
               return (
                 <div key={index}>
@@ -24,8 +24,8 @@ const Languages = () => {
                   <p>spoken: {item.splevel}</p>
                   <div>
                     {console.log("index", index)}
-                    <Link to={`/editLanguages/${index}`}><button>Modificar</button></Link>
-                    <button onClick={()=> {dispatch(deleteLanguage(item))}}>Eliminar</button>
+                    <Link to={`/editLanguages/${index}`}><button>EDIT</button></Link>
+                    <button onClick={()=> {dispatch(deleteLanguage(item))}}>DELETE</button>
                   </div>
                 </div>
               );

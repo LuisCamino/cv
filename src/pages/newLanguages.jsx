@@ -30,19 +30,23 @@ const NewLanguages = () => {
     }
   return (
     <form onSubmit={handleSubmit}>
+        <h1>ADD YOUR LANGUAGE</h1>
         <label>
             <span>language</span>
             <input type="text" name="language" onChange={handleChange}/>
         </label>
+        <br/>
         <label>
-            <span>wrlevel</span>
+            <span>written</span>
             <input type="text" name="wrlevel" onChange={handleChange}/>
         </label>
+        <br/>
         <label>
-            <span>splevel</span>
+            <span>spoken</span>
             <input type="text" name="splevel" onChange={handleChange}/>
         </label>
-        <button>add Language</button>
+        <br/>
+        <button>add language</button>
     </form>
   )
 }

@@ -5,12 +5,14 @@ import educationReducer from "./education/education.reducer";
 import experienceReducer from "./experience/experience.reducer";
 import languagesReducer from "./languages/languages.reducer";
 import habilitiesReducer from "./habilities/habilities.reducer";
+import heroReducer from "./hero/hero.reducer";
 
 const rootReducer = combineReducers({
     education: educationReducer,
     experience: experienceReducer,
     languages: languagesReducer,
     habilities: habilitiesReducer,  
+    hero: heroReducer
 }); 
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));

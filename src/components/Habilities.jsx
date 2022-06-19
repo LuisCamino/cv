@@ -13,7 +13,7 @@ const Habilities = () => {
     return (
       <div>
           <div className="habilities card">
-          <h2>Skills</h2>
+          <h1>Skills</h1>
             {habilities.map((item, index) => {
               return (
                 <div key={index}>

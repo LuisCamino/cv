@@ -12,7 +12,7 @@ const Experience = () => {
   return (
     <div>
         <div className="experience card">
-        <h2>Experience</h2>
+        <h1>Experience</h1>
           {experience.map((item, index) => {
             return (
               <div key={index}>
@@ -23,10 +23,11 @@ const Experience = () => {
                 <p>{item.where}</p>
                 <div>
  
-                  <Link to={`/editexperience/${index}`}><button>Modificar</button></Link>
-                  <button onClick={()=> {dispatch(deleteExperience(item))}}>Eliminar</button>
+                  <Link to={`/editexperience/${index}`}><button>EDIT</button></Link>
+                  <button onClick={()=> {dispatch(deleteExperience(item))}}>DELETE</button>
                 </div>
               </div>
+              
             );
           })}
         </div>
